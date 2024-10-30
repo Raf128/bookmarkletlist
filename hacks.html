@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7159405298765973"
@@ -20,24 +21,34 @@
         body {
             text-align: center;  
             color: powderblue;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
 
             }
-            h1, h2, h3, p {
+            h2, h3, p {
             color: powderblue;
             text-shadow: 1px 2px purple;
             font-weight: 700;
             }
+            h1 {
+              font-family: 'Courier New', monospace;
+              font-weight: 1000;
+              font-size: 35px;
+              color: powderblue;
+              text-shadow: 1px 2px purple;
+            }
             a {
-                color: #ff5ff5;
+                color: turquoise;
                 text-shadow: none;
-                font-weight: 500;
+                font-weight: 1000;
+                font-family: 'Courier New', monospace;
             }
             a:visited {
                 color: yellow;
             }
         hr {
             border: 2px plum solid;
-            width: 650px;
+            width: 850px;
             border-radius: 50%;
         }
 /*Stars*/
@@ -47,12 +58,9 @@ body {
   align-items: center;
   min-height: 100vh;
   background: radial-gradient(ellipse at bottom, #102845 0%, #1b1d2b 100%);
-  overflow: hidden;
 }
 
 .stars {
-  position: fixed;
-  top: -300;
   left: 0;
   width: 100%;
   height: 120%;
@@ -338,11 +346,19 @@ body {
     <hr>
     
 <details>
-    <summary style="color:ff5ff5;">How to install a bookmarklet (click me)</summary>
+    <summary style="color:turquoise;">How to use bookmarklets</summary>
 <p>Copy the hyperlinks into your Ublock Origin JS prompt, if you do not have this, and normal bookarklets are blocked:</p>
-    <summary style="color:ff5ff5;">
-
-    </summary>
+<details>
+    <summary style="color:turquoise;">Install Ublock JS Injection</summary>
+<p>Install Ublock: <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">Here</a></p>
+<p>Click on the extension and click the gears for settings</p>
+<p>Scroll to the bottom, click "I am an advanced user" and then click the new gears that pop up.</p>
+<p>Find userRecourcesLocation, and change its value from "unset" to "https://pastebin.com/raw/PPZ1T7uh"</p>
+<p>Go back to normal settings and fins the "Custom filters" tab</p>
+<p>Add "*##+js(execute_script.js)" to the filters and apply</p>
+<p>Now you can press "ctrl + ~" to open a JS popup, paste bookmarklets here.</p>
+<h3>This Only Runs On Some Pages, So for Testing ALWAYS Test Them On Edpuzzle.com.</h3>
+</details>
 </details>
     <br>
     <p><a href="javascript:function gcloak() { var link = document.querySelector(&quot;link[rel*='icon']&quot;) || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';document.title = 'My Drive - Google Drive';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);">Disguise tab as Google Drive</a> - click bookmark while on tab you want to disguise
