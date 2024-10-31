@@ -13,17 +13,26 @@
     </head>
          <body style="background-color: #120130;">
 <!-- bottom right corner gui -->
-<div class="btn">
-    <div class="text">
-    </div>
-  </div>
+<div class="main">
     <style>
         body {
             text-align: center;  
             color: powderblue;
             font-family: Arial, sans-serif;
             font-size: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow: scroll;
 
+            }
+            html {
+              scrollbar-width: none;
+              overflow-x: hidden;
+            }
+            ::-webkit-scrollbar {
+              width: 0;
+              background: transparent;
+              display: none;
             }
             h2, h3, p {
             color: powderblue;
@@ -50,6 +59,9 @@
             border: 2px plum solid;
             width: 850px;
             border-radius: 50%;
+        }
+        #main {
+          overflow-x: hidden;
         }
 /*Stars*/
 body {
@@ -431,7 +443,7 @@ body {
     <!-- <p><a href="ENTER CODE HERE">ENTER NAME HERE</a>ENTER INSTRUCTIONS HERE</p> -->
     
    <a href="me.html"> </a>
-      
+  </div>
         </body>
 </html>
 
